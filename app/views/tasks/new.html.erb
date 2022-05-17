@@ -1,0 +1,8 @@
+<%= form_for(@task) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title, placeholder: 'enter to do task', class: 'todo' %>
+  <%= f.text_field :details, placeholder: 'details', class: 'details' %>
+  <%= f.label :completed %>
+  <%= f.check_box :completed %>
+  <%= f.submit 'Create task!' %>
+<% end %>
